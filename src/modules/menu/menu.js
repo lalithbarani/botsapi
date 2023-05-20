@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { Menu } from "antd";
 import { useState } from "react";
-import "./menu.scss";
-import CloseIcon from "../../component/close-icon/close-icon";
+import "../../styles/app-stylepage/menu.scss";
+
 import { MenuActions } from "../menu/menu-action";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
 import { useLocation, useNavigate } from "react-router-dom";
 import { customerSetupcomponent } from "../action/CustomerDetail";
-import { activePageAction } from "./active-page-action";
+
 
 const pageAction = (keys) => {
   console.log(keys);
@@ -72,7 +72,7 @@ function MenuComponent(props) {
     dispacth(MenuActions.showMenu());
   };
 
-  const [collapsed, setCollapsed] = useState(false);
+  
   const navigate = useNavigate();
   let location = useLocation();
   const [current, setCurrent] = useState(
@@ -108,12 +108,12 @@ function MenuComponent(props) {
           switch (key) {
             case "customerSetup":
               navigate("/customerSetup");
-              console.log(key);
+              
               dispacth(pageAction(key));
               break;
             case "apiMapping":
               navigate("/apiMapping");
-              console.log(key);
+              
               dispacth(pageAction(key));
 
               dispacth(customerSetupcomponent(false));
@@ -122,7 +122,7 @@ function MenuComponent(props) {
               navigate("/overview");
               dispacth(pageAction(key));
 
-              console.log(key);
+              
               break;
 
             default:

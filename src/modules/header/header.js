@@ -10,7 +10,7 @@ import DynamicFontSize from "../../component/dynamic-font-size";
 import IconButton from "../../component/Button/IconButton";
 
 
-import "./header.scss";
+import "../../styles/app-stylepage/header.scss";
 const lowest = 10;
 const middle = 11;
 const highest = 12;

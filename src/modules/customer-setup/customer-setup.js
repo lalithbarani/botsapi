@@ -8,7 +8,7 @@ import {
   UserOutlined,
   CloseOutlined,
 } from "@ant-design/icons";
-import "./customer-setup.scss";
+import "../../styles/app-stylepage/customer-setup.scss";
 import FiledCard from "../../component/close-icon/cards/fields-card";
 import PrimaryLabel from "../../component/labels/primary-label";
 import VerticalLine from "../../component/vertical-line/vertical-line";

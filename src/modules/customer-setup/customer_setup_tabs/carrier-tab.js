@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
 import { Table, Space, Button } from "antd";
-import "./carrier-tab.scss";
+import "../../../styles/app-stylepage/carrier-tab.scss";
 import PaintIcon from "../../../assets/png/paint-1.png";
 import FiledCard from "../../../component/close-icon/cards/fields-card";
 import PrimaryLabel from "../../../component/labels/primary-label";

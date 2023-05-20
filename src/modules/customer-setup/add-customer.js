@@ -1,6 +1,6 @@
 import { Drawer, Row, Col, Input, Button } from 'antd'
-import "./customer-setup.scss";
-import "./add-customer.scss";
+import "../../styles/app-stylepage/customer-setup.scss";
+import "../../styles/app-stylepage/add-customer.scss";
 import React, { useState } from "react";
 import { Footer } from 'antd/es/layout/layout';
 import FormInput from "../../component/form-input/form-input";

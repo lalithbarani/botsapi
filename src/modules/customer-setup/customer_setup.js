@@ -1,7 +1,7 @@
 import { Button, Card, Col, Divider, Input, Row, Tabs, Popover } from "antd";
 import React, { Fragment, useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import "./customer_setup.scss";
+import "../../styles/app-stylepage/customer_setup.scss";
 import AddCustomer from "./add-customer";
 import AddCarrier from "./add-carrier";
 import { CUSTOMER_DATA, CUSTOMER_TYPE, CUSTOMER_DETAILS } from "../../api/data";
@@ -10,10 +10,9 @@ import {
   fetchCustomerDetails,
   customerSetupcomponent,
 } from "../action/CustomerDetail";
-
-import vector1 from "../image/Vector1.png";
-import vector2 from "../image/Vector2.png";
-import downArrow from "../image/downarrow.png";
+import vector1 from "./../../assets/png/Vector1.png";
+import vector2 from "./../../assets/png/Vector2.png";
+import downArrow from "./../../assets/png/downarrow.png";
 import CarrierTab from "./customer_setup_tabs/carrier-tab";
 import TmsTab from "./customer_setup_tabs/tms-tab";
 import ErpTab from "./customer_setup_tabs/erp-tab";

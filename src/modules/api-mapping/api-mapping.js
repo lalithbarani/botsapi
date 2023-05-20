@@ -2,7 +2,6 @@ import { Button, Select, Card, Col, Row, Tabs, Modal, Divider } from "antd";
 import React, { useState } from "react";
 
 import { PlusOutlined } from "@ant-design/icons";
-import PrimaryLabel from "../../component/labels/primary-label";
 import { ReactComponent as PaintIcon } from "./../../assets/svg/paint.svg";
 import { ReactComponent as ArrowUpRightIcon } from "../../assets/svg/arrow-up-right.svg";
 import { ReactComponent as CloudCheck } from "../../assets/svg/CloudCheck.svg";
@@ -31,7 +30,7 @@ import NewApiCarrier from "./new-api-carrier";
 import PerfectScrollbar from "react-perfect-scrollbar";
 import "react-perfect-scrollbar/dist/css/styles.css";
 
-import "./api-mapping.scss";
+import "../../styles/app-stylepage/api-mapping.scss";
 /* type list */
 
 const list = [

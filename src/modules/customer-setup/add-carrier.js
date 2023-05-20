@@ -10,8 +10,8 @@ import {
   Menu,
   Checkbox,
 } from "antd";
-import "./customer-setup.scss";
-import "./add-carrier.scss";
+import "../../styles/app-stylepage/customer-setup.scss";
+import "../../styles/app-stylepage/add-carrier.scss";
 import { PlusOutlined } from "@ant-design/icons";
 import PrimaryLabel from "../../component/labels/primary-label";
 
