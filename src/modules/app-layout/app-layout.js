@@ -1,12 +1,11 @@
-import React, { Fragment, useState } from "react";
+
 import { Outlet } from "react-router-dom";
-import "../../styles/app-stylepage/app-layout.scss";
 import Header from "../header/header";
 import { Col, Row, Card, Layout } from "antd";
 import MenuComponent from "../menu/menu";
-import menuAction from "../menu/menu-action";
+
 import { useSelector, useDispatch } from "react-redux";
-import Sider from "antd/es/layout/Sider";
+
 
 const AppLayout = () => {
   const dispacth = useDispatch();

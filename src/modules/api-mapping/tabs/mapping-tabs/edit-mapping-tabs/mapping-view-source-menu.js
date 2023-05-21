@@ -14,8 +14,7 @@ function getItem(label, key, icon, children) {
 }
 
 const items = [
-    // getItem('Navigation One', '1', '<MailOutlined />'),
-    // getItem('Navigation Two', '2', '<CalendarOutlined />'),
+   
     getItem('soap:Envelope', 'soap-envelope', '', [
         getItem('soap:Body', 'soap-body', '', [
 

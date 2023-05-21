@@ -9,7 +9,6 @@ import {
 } from "recharts";
 import { Row, Col, Card } from "antd";
 import PrimaryLabel from "../../../component/labels/primary-label";
-import "../../../styles/app-stylepage/carriers-tab.scss";
 
 const data = [
   {

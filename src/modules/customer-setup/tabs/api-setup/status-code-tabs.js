@@ -5,7 +5,6 @@ import { ReactComponent as EditIcon } from "../../../../assets/svg/edit.svg";
 import { ReactComponent as DeleteIcon } from "../../../../assets/svg/delete.svg";
 import SimpleTable from "../../../../component/Tables/simple-table";
 import { useSelector } from "react-redux";
-import PerfectScrollbar from "react-perfect-scrollbar";
 import "react-perfect-scrollbar/dist/css/styles.css";
 /* table data */
 const columns = [
@@ -85,14 +84,7 @@ let StatusCodeTabs = () => {
       className="status-code-tab px-15 pb-16"
       style={{ overflowX: "hidden" }}
     >
-      {/* <PerfectScrollbar
-        style={{
-          maxHeight: "180px",
-          overflowY: "scroll !important",
-          overflowX: "hidden !important",
-        }}
-        className="px-15 customer-box-scroll"
-      > */}
+      
       <Row gutter={12} className="mb-20 align-items-center p-0 w-100 ">
         <Col lg={show ? 14 : 16}>
           <Input
@@ -117,7 +109,7 @@ let StatusCodeTabs = () => {
         data={data}
         scroll={{ x: 0, y: "calc(31vh)" }}
       />
-      {/* </PerfectScrollbar> */}
+      
     </div>
   );
 };

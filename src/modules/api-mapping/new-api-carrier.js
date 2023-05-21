@@ -74,34 +74,7 @@ let NewApiCarrier = (props) => {
                                 ))}
                             </div>                        </div>
 
-                        {/* <Steps
-
-                            direction="vertical"
-                            current={1}
-                            items={[
-                                {
-                                    title: 'General Information',
-                                    status: 'finish',
-                                    icon: <NoteBookActiveIcon />,
-                                },
-                                {
-                                    title: 'Authentication/Attribute',
-                                    status: 'wait',
-                                    icon: <GitDiffIcon />,
-                                },
-                                {
-                                    title: 'API',
-                                    status: 'wait',
-                                    icon: <CloudCheckIcon />,
-                                },
-                                {
-                                    title: 'Others',
-                                    status: 'wait',
-                                    icon: <ListDahesIcon />,
-                                },
-                            ]}
-
-                        /> */}
+                        
 
                     </Col>
                     <Col sm={1}>
@@ -180,7 +153,7 @@ let NewApiCarrier = (props) => {
 
                 </Row>
 
-                {/* <Divider /> */}
+              
 
 
 

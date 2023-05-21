@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { Menu } from "antd";
 import { useState } from "react";
-import "../../styles/app-stylepage/menu.scss";
 
-import { MenuActions } from "../menu/menu-action";
+
 import { useDispatch } from "react-redux";
 import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
 import { useLocation, useNavigate } from "react-router-dom";
 import { customerSetupcomponent } from "../action/CustomerDetail";
+import { menuAction } from "./actions";
 
 
 const pageAction = (keys) => {
@@ -69,7 +69,7 @@ function MenuComponent(props) {
   const dispacth = useDispatch();
 
   const hideMenuHandler = () => {
-    dispacth(MenuActions.showMenu());
+    dispacth(menuAction());
   };
 
   

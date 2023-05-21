@@ -1,10 +1,10 @@
-import React, { Fragment, useState } from "react";
-import { Table, Space, Button } from "antd";
-import "../../../styles/app-stylepage/carrier-tab.scss";
+
+import {  Space, Button } from "antd";
+
 import PaintIcon from "../../../assets/png/paint-1.png";
 import FiledCard from "../../../component/close-icon/cards/fields-card";
 import PrimaryLabel from "../../../component/labels/primary-label";
-import PerfectScrollbar from "react-perfect-scrollbar";
+
 
 import { ReactComponent as FullSignalIcon } from "../../../assets/svg/full-signal.svg";
 import SimpleTable from "../../../component/Tables/simple-table";

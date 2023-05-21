@@ -1,6 +1,6 @@
 import { Table } from "antd";
 import React from "react";
-import "./simple-table.scss";
+import "../../styles/app-stylepage/simple-table.scss";
 
 const SimpleTable = ({
   columns = [],

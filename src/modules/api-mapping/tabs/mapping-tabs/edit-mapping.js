@@ -1,10 +1,10 @@
 import { Drawer, Tabs, Button, Modal, Row, Col } from "antd";
 import React, { Fragment, useState } from "react";
-import "../../../../styles/app-stylepage/edit-mapping.scss";
+
 import MappingItemTab from "./edit-mapping-tabs/mapping-item-tab";
 import MappingViewTab from "./edit-mapping-tabs/mapping-view-tab";
 import { ReactComponent as FileIcon } from "../../../../assets/svg/File.svg";
-import PerfectScrollbar from 'react-perfect-scrollbar';
+
 import 'react-perfect-scrollbar/dist/css/styles.css';
 
 
