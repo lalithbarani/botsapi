@@ -65,21 +65,19 @@
       // margin-left: 15px;
       padding-left: 0.25rem;
       padding-right: 0.25rem;
-      .active {
-        display: none;
+      
+      &.ant-tabs-tab-active{
+        .ant-tabs-tab-btn{
+          svg{
+            path{
+              stroke: #05987b;
+            }
+          }
+        }
       }
-      .non-active {
-        display: block;
-      }
+      
     }
-    .ant-tabs-tab.ant-tabs-tab-active {
-      .active {
-        display: block;
-      }
-      .non-active {
-        display: none;
-      }
-    }
+    
     
   }
   .ant-radio-wrapper .ant-radio-checked .ant-radio-inner {

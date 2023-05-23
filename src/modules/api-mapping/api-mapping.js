@@ -135,35 +135,30 @@ const tabsItem = [
     label: `General Information`,
     children: <GeneralInformationTab />,
     icon: <NoteBookIcon className="non-active" />,
-    ActiveIcon: <NoteBookSuccessIcon className="active" />,
   },
   {
     key: "2",
     label: `Authentication`,
     children: <AuthenticationTab />,
     icon: <GitDiffIcon className="non-active" />,
-    ActiveIcon: <GitDiffSuccessIcon className="active" />,
   },
   {
     key: "3",
     label: `API`,
     children: <APITab />,
     icon: <CloudCheckOutline className="non-active" />,
-    ActiveIcon: <CloudCheckOutlineSuccess className="active" />,
   },
   {
     key: "4",
     label: `Mapping`,
     children: <MappingTab />,
     icon: <TreeStructureIcon className="non-active" />,
-    ActiveIcon: <TreeStructureSuccess className="active" />,
   },
   {
     key: "5",
     label: `Others`,
     children: <OthersTab />,
     icon: <ListDashesIcon className="non-active" />,
-    ActiveIcon: <ListDashesSuccess className="active" />,
   },
 ];
 
@@ -339,9 +334,7 @@ let ApiMapping = () => {
                     return {
                       label: (
                         <span className="d-flex flex-gap-half">
-                          {activeIndex !== item.key
-                            ? item.icon
-                            : item.ActiveIcon}
+                          {item.icon}
                           {item.label}
                         </span>
                       ),
