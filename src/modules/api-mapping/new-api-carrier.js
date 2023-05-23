@@ -24,7 +24,7 @@ let NewApiCarrier = (props) => {
     };
     // const onChange = (e) => setPlacement(e.target.value);
 
-    const [current, setCurrent] = useState(1);
+    const [current, setCurrent] = useState(0);
     const onChange = (value) => {
         console.log('onChange:', value);
         setCurrent(value);
@@ -52,112 +52,106 @@ let NewApiCarrier = (props) => {
                 <Row>
 
                     <Col sm={8} >
-
-                        <>
-
-                            {/* <Steps
-
+                        <Steps
+                            current={current}
+                            onChange={onChange}
                             direction="vertical"
-                            current={1}
+                            size="large"
                             items={[
                                 {
                                     title: 'General Information',
-                                    status: 'finish',
-                                    icon: <NoteBookActiveIcon />,
+                                    icon: <NoteBookActiveIcon />
                                 },
                                 {
                                     title: 'Authentication/Attribute',
-                                    status: 'wait',
-                                    icon: <GitDiffIcon />,
+                                    icon: <GitDiffIcon />
                                 },
                                 {
                                     title: 'API',
-                                    status: 'wait',
-                                    icon: <CloudCheckIcon />,
+                                    icon: <CloudCheckIcon />
                                 },
                                 {
                                     title: 'Others',
-                                    status: 'wait',
-                                    icon: <ListDahesIcon />,
+                                    icon: <ListDahesIcon />
                                 },
                             ]}
-
-                        /> */}
-
-                        </Col>
-                        <Col sm={1}>
-                            <Divider type="vertical" style={{ height: "500px" }} />
-                        </Col>
-                        <Col sm={15}>
-                            <PerfectScrollbar style={{ maxHeight: '415px', overflowY: 'scroll !important', overflowX: 'hidden !important' }} className="px-15">
-
-                                <div>
-                                    <Space direction="vertical" size="large" style={{ display: 'flex' }}>
+                        />
 
 
-                                        <FiledCard title={"Carrier"} >
-                                            <Select
-                                                defaultValue="Select Carrier"
-                                                style={{
-                                                    width: "100%",
-                                                }}
-                                                onChange={{}}
-                                                options={[
+                    </Col>
+                    <Col sm={1}>
+                        <Divider type="vertical" style={{ height: "500px" }} />
+                    </Col>
+                    <Col sm={15}>
+                        <PerfectScrollbar style={{ maxHeight: '415px', overflowY: 'scroll !important', overflowX: 'hidden !important' }} className="px-15">
 
-                                                ]}
-                                            />
-                                        </FiledCard>
-                                        <FiledCard title={"Logistichub API"} >
-                                            <Select
-                                                defaultValue="Select "
-                                                style={{
-                                                    width: "100%",
-                                                }}
-                                                onChange={{}}
-                                                options={[
+                            <div>
+                                <Space direction="vertical" size="large" style={{ display: 'flex' }}>
 
-                                                ]}
-                                            />
-                                        </FiledCard>
-                                        <FiledCard title={"Request Type"}  >
-                                            <Select
-                                                defaultValue="Select Request Type"
-                                                style={{
-                                                    width: "100%",
-                                                }}
-                                                onChange={{}}
-                                                options={[
 
-                                                ]}
-                                            />
-                                        </FiledCard>
+                                    <FiledCard title={"Carrier"} >
+                                        <Select
+                                            defaultValue="Select Carrier"
+                                            style={{
+                                                width: "100%",
+                                            }}
+                                            onChange={{}}
+                                            options={[
 
-                                        <FormInput
-                                            editMode={true}
-                                            label={"Username"}
-                                            placeholder={"Enter Username"}
-                                            name="userName"
+                                            ]}
                                         />
-                                    </Space>
-                                    <div>
+                                    </FiledCard>
+                                    <FiledCard title={"Logistichub API"} >
+                                        <Select
+                                            defaultValue="Select "
+                                            style={{
+                                                width: "100%",
+                                            }}
+                                            onChange={{}}
+                                            options={[
 
-                                    </div>
+                                            ]}
+                                        />
+                                    </FiledCard>
+                                    <FiledCard title={"Request Type"}  >
+                                        <Select
+                                            defaultValue="Select Request Type"
+                                            style={{
+                                                width: "100%",
+                                            }}
+                                            onChange={{}}
+                                            options={[
+
+                                            ]}
+                                        />
+                                    </FiledCard>
+
                                     <FormInput
                                         editMode={true}
-                                        label={"Password"}
-                                        placeholder={"Enter Password"}
-                                        name="password"
+                                        label={"Username"}
+                                        placeholder={"Enter Username"}
+                                        name="userName"
                                     />
-                                    <FormInput
-                                        editMode={true}
-                                        label={"Account Number"}
-                                        placeholder={"Enter Account Number"}
-                                        name="accountNumber"
-                                    />
+                                </Space>
+                                <div>
+
                                 </div>
-                            </PerfectScrollbar>
+                                <FormInput
+                                    editMode={true}
+                                    label={"Password"}
+                                    placeholder={"Enter Password"}
+                                    name="password"
+                                />
+                                <FormInput
+                                    editMode={true}
+                                    label={"Account Number"}
+                                    placeholder={"Enter Account Number"}
+                                    name="accountNumber"
+                                />
+                            </div>
+                        </PerfectScrollbar>
 
-                        </Col>
+                    </Col>
 
                 </Row>
 
