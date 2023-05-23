@@ -1,13 +1,11 @@
-import { Card, Col, Row, Switch, Input } from "antd";
+import { Col, Row, Switch, Input } from "antd";
 import React, { Fragment } from "react";
 import PrimaryLabel from "../../../../component/labels/primary-label";
 import FormInput from "../../../../component/form-input/form-input";
-// import SwitchIcon from "../../../../component/switch/switch-icon";
 import { ReactComponent as PathIcon } from "../../../../assets/svg/path.svg";
 import { ReactComponent as ShieldIcon } from "../../../../assets/svg/shieldStar.svg";
 import { ReactComponent as PackageIcon } from "../../../../assets/svg/package.svg";
 import { ReactComponent as ImageIcon } from "../../../../assets/svg/image.svg";
-import { useSelector } from "react-redux";
 import PerfectScrollbar from "react-perfect-scrollbar";
 import "react-perfect-scrollbar/dist/css/styles.css";
 
@@ -26,7 +24,7 @@ function ApiSetupTabs() {
       <div className="api-set-tab" style={{ overflowX: "hidden" }}>
         <PerfectScrollbar
           style={{
-            // maxHeight: "38rem",
+            
             overflowY: "scroll !important",
             overflowX: "hidden !important",
           }}

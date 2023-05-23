@@ -31,6 +31,8 @@ import PerfectScrollbar from "react-perfect-scrollbar";
 import "react-perfect-scrollbar/dist/css/styles.css";
 
 import "../../styles/app-stylepage/api-mapping.scss";
+
+
 /* type list */
 
 const list = [

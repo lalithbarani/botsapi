@@ -13,7 +13,7 @@ let ApiTestTabs = () => {
       <div className=" api-test-tab">
         <PerfectScrollbar
           style={{
-            // maxHeight: "38rem",
+            
             overflowY: "scroll !important",
             overflowX: "hidden !important",
           }}

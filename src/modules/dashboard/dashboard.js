@@ -2,7 +2,6 @@ import React, { Fragment, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getDashboardInfo } from "./actions";
 import { Row, Col, Button } from "antd";
-import "./dashboard.scss";
 import { ReactComponent as UnionIcon } from "./../../assets/svg/Union.svg";
 
 function Dashboard() {

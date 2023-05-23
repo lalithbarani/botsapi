@@ -1,7 +1,7 @@
 import { Button, Card, Col, Divider, Input, Row, Tabs, Popover } from "antd";
 import React, { Fragment, useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import "../../styles/app-stylepage/customer_setup.scss";
+
 import AddCustomer from "./add-customer";
 import AddCarrier from "./add-carrier";
 import { CUSTOMER_DATA, CUSTOMER_TYPE, CUSTOMER_DETAILS } from "../../api/data";

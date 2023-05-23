@@ -1,5 +1,5 @@
 import { Row, Col, Card } from "antd";
-import React, { Fragment } from "react";
+
 import PerfectScrollbar from "react-perfect-scrollbar";
 import "react-perfect-scrollbar/dist/css/styles.css";
 

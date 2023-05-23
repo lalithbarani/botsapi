@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, Input } from "antd";
-//import formLabelToolTip from "../Common/formLabelToolTip";
+
 import { isRequiredField } from "../../utility/utility";
 
 const FormInput = ({
@@ -48,7 +48,7 @@ const FormInput = ({
         }
         labelCol={10}
         colon={colon}
-      // tooltip={tooltip ? formLabelToolTip(tooltip) : false}
+     
       >
         {inputType === "password" ? (
           <Input.Password

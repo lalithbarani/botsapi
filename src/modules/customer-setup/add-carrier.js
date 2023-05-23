@@ -4,14 +4,10 @@ import {
   Col,
   Input,
   Card,
-  Grid,
-  Divider,
   Button,
   Menu,
   Checkbox,
 } from "antd";
-import "../../styles/app-stylepage/customer-setup.scss";
-import "../../styles/app-stylepage/add-carrier.scss";
 import { PlusOutlined } from "@ant-design/icons";
 import PrimaryLabel from "../../component/labels/primary-label";
 
@@ -22,14 +18,14 @@ import { ReactComponent as Graph } from "./../../assets/svg/Graph.svg";
 import loveclipicon from "./../../assets/png/loveclip.png";
 import moicon from "./../../assets/png/mo.png";
 import salesforceicon from "./../../assets/png/salesforce.png";
-import susiicon from "./../../assets/png/susi.png";
+
 import timeicon from "./../../assets/png/time.png";
-import boicon from "./../../assets/png/bo.png";
+
 import { ReactComponent as RightArrowIcon } from "../../assets/svg/ArrowRight.svg";
 import React, { useState, Fragment } from "react";
-import { Footer } from "antd/es/layout/layout";
+
 import { ReactComponent as Minusicon } from "../../assets/svg/minus.svg";
-import { ReactComponent as SixDotIcon } from "../../assets/svg/DotsSixVertical.svg";
+
 import PerfectScrollbar from "react-perfect-scrollbar";
 import "react-perfect-scrollbar/dist/css/styles.css";
 
@@ -43,8 +39,6 @@ function getItem(label, key, icon, children) {
 }
 
 const items = [
-  // getItem('Navigation One', '1', '<MailOutlined />'),
-  // getItem('Navigation Two', '2', '<CalendarOutlined />'),
   getItem("All (50)", "all", ""),
   getItem("TMS (10)", "tms", ""),
   getItem("Carrier (8)", "carrier", ""),
