@@ -8,7 +8,6 @@ import {
   UserOutlined,
   CloseOutlined,
 } from "@ant-design/icons";
-import "../../styles/app-stylepage/customer-setup.scss";
 import FiledCard from "../../component/close-icon/cards/fields-card";
 import PrimaryLabel from "../../component/labels/primary-label";
 import VerticalLine from "../../component/vertical-line/vertical-line";
@@ -75,10 +74,7 @@ function CustomerSetup(props) {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
-  // const selectedCard = useRef(null);
-  // const selectedCard1 = useRef(null);
-  // const selectedCard2 = useRef(null);
-  // const myRef = useRef();
+ 
 
   let addCustomerHandler = () => {
     setAddCustomer(!addCustomer);
@@ -109,19 +105,7 @@ function CustomerSetup(props) {
     setConnect(false);
   };
 
-  // const addClassHandler = () => {
-  //   selectedCard.current.classList.add("selected-card");
-  // };
-  // const addClassHandler1 = () => {
-  //   selectedCard1.current.classList.add("selected-card");
-  // };
-  // const addClassHandler2 = () => {
-  //   selectedCard2.current.classList.add("selected-card");
-  // };
-
-  // const removeClassHandler = () => {
-  //   selectedCard.current.classList.remove("selected-card");
-  // };
+ 
 
   const tabsItem = [
     {
@@ -145,17 +129,7 @@ function CustomerSetup(props) {
       children: <PerformanceTabs />,
     },
   ];
-  // useEffect(() => {
-  //   const x = myRef.current.offsetTop;
-  //   console.log(x);
-  //   if (open) {
-  //     setOpen(false);
-  //   } else if (open1) {
-  //     setOpen1(false);
-  //   } else if (open2) {
-  //     setOpen2(false);
-  //   }
-  // }, [show]);
+ 
 
   return (
     <div className="add-customer">
@@ -219,8 +193,7 @@ function CustomerSetup(props) {
               </Row>
             </div>
 
-            {/* </Card>
-          <Card style={{ backgroundColor: "transparent !important" }} className="customer-items"> */}
+            
             <Row style={{ backgroundColor: "transparent !important" }}>
               <Col sm={24} >
                 <PerfectScrollbar
@@ -286,8 +259,7 @@ function CustomerSetup(props) {
                               </PrimaryLabel>
                             </FiledCard>
                           </Col>
-                          {/* </Row>
-                        <Row className=" inside-wrapper mt-10" gutter={12}> */}
+                          
                           <Col sm={11}>
 
                           </Col>

@@ -19,7 +19,7 @@ let PerformanceTabs = () => {
                 sx={{
                   height: 150,
                   width: 160,
-                  // transform: "rotate(-90deg)"
+                 
                 }}
                 className="progress-bar  text-center"
               >
@@ -55,7 +55,7 @@ let PerformanceTabs = () => {
                   height: 150,
                   width: 160,
 
-                  // transform: "rotate(-90deg)"
+                 
                 }}
                 className="progress-bar m-auto"
               >

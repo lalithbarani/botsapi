@@ -1,7 +1,7 @@
-import { Row, Col, Input, Button, Affix, Divider } from "antd";
+import { Row, Col, Input, Button,  Divider } from "antd";
 import React, { Fragment, useState } from "react";
 import PrimaryLabel from "../../../../../component/labels/primary-label";
-import "./mapping-view-tab.scss";
+
 import FormInput from "../../../../../component/form-input/form-input"
 
 import { FileUploader } from "react-drag-drop-files";//drag and drop file upload 
