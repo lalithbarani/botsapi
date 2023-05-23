@@ -8,24 +8,9 @@ import FormInput from '../../component/form-input/form-input';
 import FiledCard from '../../component/close-icon/cards/fields-card';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import 'react-perfect-scrollbar/dist/css/styles.css';
+import { FaCheck, FaCircle } from 'react-icons/fa';
+import '../../styles/app-stylepage/new-api-carrier.scss'
 
-const steps = [
-    {
-        title: 'Step 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        icon: <NoteBookActiveIcon />
-    },
-    {
-        title: 'Step 2',
-        description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        icon: <GitDiffIcon />
-    },
-    {
-        title: 'Step 3',
-        description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-        icon: <CloudCheckIcon />
-    }
-];
 
 
 let NewApiCarrier = (props) => {
@@ -37,8 +22,14 @@ let NewApiCarrier = (props) => {
         props.updateStatus(false);
         setOpen(false);
     };
-    const onChange = (e) => setPlacement(e.target.value);
-    const description = 'This is a description.';
+    // const onChange = (e) => setPlacement(e.target.value);
+
+    const [current, setCurrent] = useState(1);
+    const onChange = (value) => {
+        console.log('onChange:', value);
+        setCurrent(value);
+    };
+    const description = '';
 
     return (
         <Fragment>
@@ -61,47 +52,37 @@ let NewApiCarrier = (props) => {
                 <Row>
 
                     <Col sm={8} >
-                        <div>
-                            <div className="vertical-icon-steps">
-                                {steps.map((step, index) => (
-                                    <div key={index} className="vertical-icon-step">
-                                        <div className="icon">{step.icon}</div>
-                                        <div className="content">
-                                            <h3 className="title">{step.title}</h3>
-                                            <p className="description">{step.description}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>                        </div>
 
-                        {/* <Steps
+                        <>
 
-                            direction="vertical"
-                            current={1}
-                            items={[
-                                {
-                                    title: 'General Information',
-                                    status: 'finish',
-                                    icon: <NoteBookActiveIcon />,
-                                },
-                                {
-                                    title: 'Authentication/Attribute',
-                                    status: 'wait',
-                                    icon: <GitDiffIcon />,
-                                },
-                                {
-                                    title: 'API',
-                                    status: 'wait',
-                                    icon: <CloudCheckIcon />,
-                                },
-                                {
-                                    title: 'Others',
-                                    status: 'wait',
-                                    icon: <ListDahesIcon />,
-                                },
-                            ]}
 
-                        /> */}
+                            <Steps
+                                current={current}
+                                onChange={onChange}
+                                direction="vertical"
+                                size="large"
+                                items={[
+                                    {
+                                        title: 'General Information',
+                                        icon: <NoteBookActiveIcon />
+                                    },
+                                    {
+                                        title: 'Authentication/Attribute',
+                                        icon: <GitDiffIcon />
+                                    },
+                                    {
+                                        title: 'API',
+                                        icon: <CloudCheckIcon />
+                                    },
+                                    {
+                                        title: 'Others',
+                                        icon: <ListDahesIcon />
+                                    },
+                                ]}
+                            />
+                        </>
+
+
 
                     </Col>
                     <Col sm={1}>
@@ -180,7 +161,6 @@ let NewApiCarrier = (props) => {
 
                 </Row>
 
-                {/* <Divider /> */}
 
 
 

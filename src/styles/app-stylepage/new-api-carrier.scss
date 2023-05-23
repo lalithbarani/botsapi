@@ -1,0 +1,86 @@
+.vertical-stepper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    margin-left: 10px;
+  }
+  
+  .active-step{
+    path{
+      stroke: #aaa  ;
+    }
+  }
+  .ant-steps{
+    gap: 2rem ;
+  }
+.ant-steps.ant-steps-vertical{
+  .ant-steps-item-tail::after{
+    height: 68px !important;
+  }
+  .ant-steps-item{
+    .ant-steps-item-icon{
+      .ant-steps-icon{
+        padding:0.5rem 1rem 0.4rem 1rem;
+        border-radius: 50%;
+
+        
+      }
+    }
+    .ant-steps-item-container{
+      &:hover{
+        .ant-steps-item-content{
+          .ant-steps-item-title{
+
+            color:#05987B !important
+          }
+        }
+
+      }
+      .ant-steps-item-tail{
+        padding-left: 4px;
+
+      }
+    }
+  }
+
+  .ant-steps-item.ant-steps-item-finish, .ant-steps-item.ant-steps-item-process{
+    .ant-steps-item-icon{
+      .ant-steps-icon{
+        background-color: #05987B !important;
+        svg{
+          path{
+            stroke: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-steps-item-finish{
+    .ant-steps-item-container{
+      .ant-steps-item-tail::after{
+        background-color: #05987B;
+      }
+    }
+
+  }
+
+ .ant-steps-item.ant-steps-item-wait{
+    .ant-steps-item-icon{
+      .ant-steps-icon{
+        background-color: #F2F4F7;
+      }
+    }
+    
+  }
+}
+
+
